@@ -20,7 +20,7 @@
   gap: 10px; /* Space between buttons */
 }
 
-.create-post, .go-home-bt {
+.header-create-post, .header-go-home {
   background-color: #363836;
   border: none;
   border-radius: 5px;

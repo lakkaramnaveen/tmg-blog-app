@@ -6,12 +6,12 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <div className='header'>
-      <h1>My Blog App</h1>
+      <h1 onClick={() => navigate('/')}>My Blog App</h1>
       <div className='header-buttons'>
-        <button className="create-post" onClick={() => navigate('/create')}>
+        <button className="header-create-post" onClick={() => navigate('/create')}>
           Create Post
         </button>
-        <button className="go-home-bt" onClick={() => navigate('/')}>
+        <button className="header-go-home " onClick={() => navigate('/')}>
           Go Home
         </button>
       </div>
