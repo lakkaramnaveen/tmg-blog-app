@@ -6,7 +6,7 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <div className='header'>
-      <h1 onClick={() => navigate('/')}>My Blog App</h1>
+      <h1 onClick={() => navigate('/')}>My Blog</h1>
       <div className='header-buttons'>
         <button className="header-create-post" onClick={() => navigate('/create')}>
           Create Post
