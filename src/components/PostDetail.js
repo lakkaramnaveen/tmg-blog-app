@@ -28,9 +28,11 @@ const PostDetail = () => {
   if (error) return <div className="error">Error: {error.message}</div>;
 
   return (
-    <div className="post-detail">
-      <h2>{post.title}</h2>
-      <p>{post.body}</p>
+    <div className="post-detail-container">
+      <div className="post-detail-box">
+        <h2>{post.title}</h2>
+        <p>{post.body}</p>
+      </div>
     </div>
   );
 };

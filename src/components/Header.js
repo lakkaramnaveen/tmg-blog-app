@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 const Header = () => (
-  <header>
+  <header className='header'>
     <h1>My Blog App</h1>
-    <button className='header-button'><Link to={`/create`}>Create Post</Link></button>
+    <button className='header-button'>
+      <Link to={`/create`} className='header-link'>Create Post</Link>
+    </button>
   </header>
 );
 

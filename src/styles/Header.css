@@ -1,19 +1,46 @@
 .header {
-    background-color: #282c34;
-    padding: 20px;
-    color: white;
-    text-align: center;
-  }
-  
-  .header h1 {
-    margin: 0;
-  }
+  background-color: #282c34;
+  padding: 15px 20px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
 
-  .header-button {
-    background-color: #6ceb49;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.header h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.header-button {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.header-button:hover {
+  background-color: #4fa3b6;
+  transform: scale(1.05);
+}
+
+.header-button:active {
+  background-color: #3d8c9e;
+  transform: scale(0.98);
+}
+
+.header-link {
+  text-decoration: none;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+}
