@@ -10,6 +10,7 @@ const CreatePost = ({ onPostCreated }) => {
     const newPost = { title, body };
     const response = await createPost(newPost);
     onPostCreated(response.data);
+    // location.reload();
   };
 
   return (
