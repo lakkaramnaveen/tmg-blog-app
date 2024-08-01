@@ -9,8 +9,8 @@ const CreatePost = ({ onPostCreated }) => {
     e.preventDefault();
     const newPost = { title, body };
     const response = await createPost(newPost);
-    onPostCreated(response.data);
-    // location.reload();
+    window.location.reload()
+    window.location.href = "http://localhost:3000/";
   };
 
   return (

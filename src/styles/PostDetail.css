@@ -1,0 +1,21 @@
+.post-detail {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .post-detail h2 {
+    margin-top: 0;
+    font-size: 2em;
+  }
+  
+  .post-detail p {
+    line-height: 1.6;
+    font-size: 1.1em;
+  }
+  
+  .loading, .error {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  

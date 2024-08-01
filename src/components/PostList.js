@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchPosts, deletePost } from '../services/api';
 import Post from './Post';
+import '../styles/PostList.css';
 
 const PostList = () => {
   const [posts, setPosts] = useState([]);
@@ -31,11 +32,11 @@ const PostList = () => {
     }
   };
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
+  if (loading) return <div className="loading">Loading...</div>;
+  if (error) return <div className="error">Error: {error.message}</div>;
 
   return (
-    <div>
+    <div className="post-list">
       {posts.map(post => (
         <Post key={post._id} post={post} onDelete={() => handleDelete(post._id)} />
       ))}

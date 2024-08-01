@@ -1,0 +1,29 @@
+.post {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+  }
+  
+  .post h3 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .post p {
+    color: #555;
+  }
+  
+  .delete-button {
+    background-color: #e57373;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #f44336;
+  }
+  
