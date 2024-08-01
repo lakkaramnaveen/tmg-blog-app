@@ -2,38 +2,55 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
   padding: 20px;
-  min-height: 80vh; /* Ensures the content is vertically centered */
 }
 
 .post-detail-box {
-  background-color: #f9f9f9;
+  background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 800px;
+  max-width: 600px;
   width: 100%;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.post-detail-box:hover {
-  background-color: #e0e0e0;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .post-detail-box h2 {
-  margin-top: 0;
-  font-size: 2em;
+  margin: 0 0 15px;
+  font-size: 1.5em;
   color: #333;
 }
 
 .post-detail-box p {
+  font-size: 1em;
   line-height: 1.6;
-  font-size: 1.1em;
   color: #555;
 }
 
+.go-home-button {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 10px 20px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.go-home-button:hover {
+  background-color: #4fa3b6;
+  transform: scale(1.05);
+}
+
+.go-home-button:active {
+  background-color: #3d8c9e;
+  transform: scale(0.98);
+}
+
 .loading, .error {
-  text-align: center;
   font-size: 1.2em;
+  color: #333;
 }

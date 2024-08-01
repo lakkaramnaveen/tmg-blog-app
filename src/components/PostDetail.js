@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom'; // Updated import
 import { fetchPostById } from '../services/api';
 import '../styles/PostDetail.css';
 
@@ -8,6 +8,7 @@ const PostDetail = () => {
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const navigate = useNavigate(); // Updated to useNavigate
 
   useEffect(() => {
     const getPost = async () => {
@@ -32,6 +33,9 @@ const PostDetail = () => {
       <div className="post-detail-box">
         <h2>{post.title}</h2>
         <p>{post.body}</p>
+        <button className="go-home-button" onClick={() => navigate('/')}>
+          Go Home
+        </button>
       </div>
     </div>
   );
